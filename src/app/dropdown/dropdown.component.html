@@ -1,0 +1,7 @@
+<div #drop class="dropdownContainer">
+  <button (click)="btnClick()">dropdown</button>
+  <div  class="subItemContainer" [@openClose]="isOpen ? 'open': 'closed'">
+    <div (click)="itemClick('item1')">item1</div>
+    <div (click)="itemClick('item2')">item2</div>  
+  </div>
+</div>

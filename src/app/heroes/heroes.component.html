@@ -1,0 +1,14 @@
+
+<div class="hero-page-container">
+  <label for="name">hero name: </label>
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
+  <p>heroes works!</p>
+  <h2>{{hero.name}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div><span>name: </span>{{hero.name}}</div>
+  <li *ngFor="let hero of heros" (click)="onSelet(hero)">
+    <span [class.qq]="hero === selectedHero">{{hero.name}}</span>
+    <app-hero-detail [hero]="hero"></app-hero-detail>
+  </li>
+</div>
+
