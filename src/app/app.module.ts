@@ -14,6 +14,7 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatMenuModule} from '@angular/material/menu'
+import { MatButtonModule } from '@angular/material/button'
 
 
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -69,7 +70,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     // TestIconComponent
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   exports: [
     MatSliderModule,
@@ -78,7 +80,8 @@ const routes: Routes = [
     MatSidenavModule,
     RouterModule,
     // TestIconComponent
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

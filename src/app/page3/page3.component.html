@@ -1,10 +1,18 @@
-<div class="qq123">
-  page3
-  <div #boxContainer class="box">
-    <img src="assets/images/01.jpeg">
-    <img src="assets/images/02.jpeg">
-    <img src="assets/images/03.jpeg">
-    <img src="assets/images/04.jpeg">
+<div class="page3-container">
+  <div class="title">this is a card rotaion</div>
+  <div class="box-container" (mousedown)="boxClick()">
+    <div #boxContainer class="box">
+      <img src="assets/images/01.jpeg">
+      <img src="assets/images/02.jpeg">
+      <img src="assets/images/03.jpeg">
+      <img src="assets/images/04.jpeg">
+    </div>
+  </div>
+  
 
+  <div class="btn-wrapper">
+    <button (click)="lastClick()" mat-button color="primary">last</button>
+    <button (click)="resetClick()" mat-button color="primary">reset</button>
+    <button (click)="nextClick()" mat-button color="primary">next</button>
   </div>
 </div>
