@@ -1,0 +1,30 @@
+<div class="watchContainer">
+  <div  class="progressWrapper">
+    <div class="percenText">{{percentage}}</div>
+    <svg>
+      <circle class="bg" cx="100" cy="100" r="95"/>
+      <circle [appCircle]="dx" class="progress" cx="100" cy="100" r="95"/>
+    </svg>
+  </div>
+  <div class="btn-wrapper">
+    <button mat-button color="primary" (click)="add()">add</button>
+  </div>
+
+  <div class="watchWrapper">
+    <div class="point-wrapper">
+      <div class="point point-1"></div>
+      <div class="point"></div>
+      <div class="point"></div>
+      <div class="point"></div>
+
+      <!-- <div class="point point-2"></div>
+      <div class="point point-3"></div>
+      <div class="point point-4"></div>
+      <div class="point point-5"></div>
+      <div class="point point-6"></div> -->
+
+
+
+    </div>
+  </div>
+</div>

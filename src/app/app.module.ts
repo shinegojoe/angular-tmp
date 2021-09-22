@@ -31,13 +31,16 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { MenuComponent } from './menu/menu.component'
 
 import { HttpClientModule } from '@angular/common/http';
-import { Page3Component } from './page3/page3.component'
+import { Page3Component } from './page3/page3.component';
+import { WatchPageComponent } from './watch-page/watch-page.component';
+import { CircleDirective } from './circle.directive'
 
 
 const routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
   { path: 'page2', component: Page2Component },
-  { path: 'page3', component: Page3Component}
+  { path: 'page3', component: Page3Component},
+  { path: 'watch', component: WatchPageComponent }
 
 ]
 
@@ -56,7 +59,9 @@ const routes: Routes = [
     FillcolorDirective,
     DropdownComponent,
     MenuComponent,
-    Page3Component
+    Page3Component,
+    WatchPageComponent,
+    CircleDirective
   ],
   imports: [
     BrowserModule,
